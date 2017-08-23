@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
  <test name="GC Test">
-<parameter name="browser" value="appium"/>
+<parameter name="browser" value="FF"/>
     <classes>
-      <class name="com.ctli.it.mobiletestcase.BookingTestCase"/>
+      <class name="com.ctli.it.testcases.LoginTestCase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
