@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="browser" value="appium"/>
+  <parameter name="browser" value="WebApp"/>
   <test name="GC Test(failed)">
-    <parameter name="browser" value="appium"/>
+    <parameter name="browser" value="WebApp"/>
     <classes>
       <class name="com.ctli.it.mobiletestcase.BookingTestCase">
         <methods>

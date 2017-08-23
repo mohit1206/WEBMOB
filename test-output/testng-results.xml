@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="27580" started-at="2017-08-23T06:21:41Z" finished-at="2017-08-23T06:22:09Z">
+    <groups>
+    </groups>
+    <test name="GC Test" duration-ms="27580" started-at="2017-08-23T06:21:41Z" finished-at="2017-08-23T06:22:09Z">
+      <class name="com.ctli.it.testcases.LoginTestCase">
+        <test-method status="PASS" signature="initialSetUp()[pri:0, instance:com.ctli.it.testcases.LoginTestCase@5442a311]" name="initialSetUp" is-config="true" duration-ms="192" started-at="2017-08-23T11:51:41Z" finished-at="2017-08-23T11:51:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialSetUp -->
+        <test-method status="PASS" signature="launchApp(java.lang.reflect.Method, org.testng.xml.XmlTest)[pri:0, instance:com.ctli.it.testcases.LoginTestCase@5442a311]" name="launchApp" is-config="true" duration-ms="23998" started-at="2017-08-23T11:51:41Z" finished-at="2017-08-23T11:52:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ctli.it.testcases.LoginTestCase.testcase() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Test: "GC Test" verbose:1[parameters:browser=>FF][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.ctli.it.testcases.LoginTestCase]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="testcase()[pri:0, instance:com.ctli.it.testcases.LoginTestCase@5442a311]" name="testcase" duration-ms="3553" started-at="2017-08-23T11:52:05Z" finished-at="2017-08-23T11:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase -->
+        <test-method status="PASS" signature="closeApp(java.lang.reflect.Method, org.testng.xml.XmlTest)[pri:0, instance:com.ctli.it.testcases.LoginTestCase@5442a311]" name="closeApp" is-config="true" duration-ms="17" started-at="2017-08-23T11:52:09Z" finished-at="2017-08-23T11:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ctli.it.testcases.LoginTestCase.testcase() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Test: "GC Test" verbose:1[parameters:browser=>FF][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.ctli.it.testcases.LoginTestCase]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="afterSuite(org.testng.xml.XmlTest)[pri:0, instance:com.ctli.it.testcases.LoginTestCase@5442a311]" name="afterSuite" is-config="true" duration-ms="212" started-at="2017-08-23T11:52:09Z" finished-at="2017-08-23T11:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "GC Test" verbose:1[parameters:browser=>FF][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.ctli.it.testcases.LoginTestCase]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.ctli.it.testcases.LoginTestCase -->
+    </test> <!-- GC Test -->
+  </suite> <!-- Suite -->
+</testng-results>
