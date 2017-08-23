@@ -1,0 +1,1052 @@
+2017-08-23 05:55:41:726 - info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+2017-08-23 05:55:41:727 - info: Appium REST http interface listener started on 0.0.0.0:4723
+2017-08-23 05:55:41:729 - info: [debug] Non-default server args: {"log":"C:\\LastHope\\TestAutothon\\.\\AppiumServerlog.txt"}
+2017-08-23 05:55:41:729 - info: Console LogLevel: debug
+2017-08-23 05:55:41:730 - info: File LogLevel: debug
+2017-08-23 05:55:41:847 - info: --> GET /wd/hub/status {}
+2017-08-23 05:55:41:852 - info: [debug] Responding to client with success: {"status":0,"value":{"build":{"version":"1.4.16","revision":"ae6877eff263066b26328d457bd285c0cc62430d"}}}
+2017-08-23 05:55:41:858 - info: <-- GET /wd/hub/status 200 12.118 ms - 105 {"status":0,"value":{"build":{"version":"1.4.16","revision":"ae6877eff263066b26328d457bd285c0cc62430d"}}}
+2017-08-23 05:55:42:344 - info: --> POST /wd/hub/session {"desiredCapabilities":{"browserName":"Chrome","chromedriverExecutable":"C:\\LastHope\\TestAutothon\\Resources\\chromedriver.exe","platformName":"Android","deviceName":"e754d6d3","version":"6.0.1"}}
+2017-08-23 05:55:42:345 - info: Client User-Agent string: Apache-HttpClient/4.5.2 (Java/1.8.0_92)
+2017-08-23 05:55:42:346 - info: [debug] The following desired capabilities were provided, but not recognized by appium. They will be passed on to any other services running on this server. : chromedriverExecutable, version
+2017-08-23 05:55:42:347 - info: Set mode: Proxying straight through to Chromedriver
+2017-08-23 05:55:42:347 - info: [debug] Looks like we want chrome on android
+2017-08-23 05:55:42:348 - info: [debug] Creating new appium session bccb85dd-d803-4e2c-844a-9c1d96be576c
+2017-08-23 05:55:42:349 - info: [debug] Checking whether adb is present
+2017-08-23 05:55:42:354 - info: [debug] Using adb from C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe
+2017-08-23 05:55:42:354 - info: [debug] Using fast reset? true
+2017-08-23 05:55:42:354 - info: [debug] Preparing device for session
+2017-08-23 05:55:42:355 - info: [debug] Not checking whether app is present since we are assuming it's already on the device
+2017-08-23 05:55:42:355 - info: Retrieving device
+2017-08-23 05:55:42:355 - info: [debug] Trying to find a connected android device
+2017-08-23 05:55:42:355 - info: [debug] Getting connected devices...
+2017-08-23 05:55:42:356 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" devices
+2017-08-23 05:55:42:545 - info: [debug] 1 device(s) connected
+2017-08-23 05:55:42:546 - info: Found device e754d6d3
+2017-08-23 05:55:42:546 - info: [debug] Setting device id to e754d6d3
+2017-08-23 05:55:42:546 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2017-08-23 05:55:42:547 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s e754d6d3 wait-for-device
+2017-08-23 05:55:42:728 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s e754d6d3 shell "echo 'ready'"
+2017-08-23 05:55:42:922 - info: [debug] Starting logcat capture
+2017-08-23 05:55:43:060 - info: [debug] Pushing unlock helper app to device...
+2017-08-23 05:55:43:062 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s e754d6d3 install "C:\Program Files (x86)\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+2017-08-23 05:55:48:383 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s e754d6d3 shell "dumpsys window"
+2017-08-23 05:55:48:683 - info: [debug] Screen already unlocked, continuing.
+2017-08-23 05:55:48:683 - info: [debug] Forwarding system:4724 to device:4724
+2017-08-23 05:55:48:683 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s e754d6d3 forward tcp:4724 tcp:4724
+2017-08-23 05:55:48:854 - info: [debug] Pushing appium bootstrap to device...
+2017-08-23 05:55:48:855 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s e754d6d3 push "C:\\Program Files (x86)\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2017-08-23 05:55:49:023 - info: Starting App
+2017-08-23 05:55:49:023 - info: [debug] Attempting to kill all 'uiautomator' processes
+2017-08-23 05:55:49:023 - info: [debug] Getting all processes with 'uiautomator'
+2017-08-23 05:55:49:024 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s e754d6d3 shell "ps 'uiautomator'"
+2017-08-23 05:55:49:323 - info: [debug] No matching processes found
+2017-08-23 05:55:49:323 - info: [debug] Running bootstrap
+2017-08-23 05:55:49:323 - info: [debug] spawning: C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe -s e754d6d3 shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.android.chrome -e disableAndroidWatchers false
+2017-08-23 05:55:51:062 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2017-08-23 05:55:51:062 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2017-08-23 05:55:51:063 - info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+2017-08-23 05:55:51:063 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2017-08-23 05:55:51:063 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2017-08-23 05:55:51:063 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2017-08-23 05:55:51:063 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2017-08-23 05:55:51:064 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+2017-08-23 05:55:51:119 - info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+2017-08-23 05:55:51:120 - info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+2017-08-23 05:55:51:121 - info: [debug] [BOOTSTRAP] [debug] Loading json...
+2017-08-23 05:55:51:124 - info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+2017-08-23 05:55:51:127 - info: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+2017-08-23 05:55:51:136 - info: [debug] [BOOTSTRAP] [debug] Client connected
+2017-08-23 05:55:51:138 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+2017-08-23 05:55:51:139 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-08-23 05:55:51:140 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+2017-08-23 05:55:51:141 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"\/data\/local\/tmp"}
+2017-08-23 05:55:51:142 - info: [debug] dataDir set to: /data/local/tmp
+2017-08-23 05:55:51:143 - info: Chromedriver: Changed state to 'starting'
+2017-08-23 05:55:51:149 - info: Chromedriver: Set chromedriver binary as: C:\LastHope\TestAutothon\Resources\chromedriver.exe
+2017-08-23 05:55:51:149 - info: Chromedriver: Killing any old chromedrivers, running: FOR /F "usebackq tokens=5" %a in (`netstat -nao ^| findstr /R /C:"9515 "`) do (FOR /F "usebackq" %b in (`TASKLIST /FI "PID eq %a" ^| findstr /I chromedriver.exe`) do (IF NOT %b=="" TASKKILL /F /PID %a))
+2017-08-23 05:57:09:114 - info: Chromedriver: No old chromedrivers seemed to exist
+2017-08-23 05:57:09:115 - info: Chromedriver: Spawning chromedriver with: C:\LastHope\TestAutothon\Resources\chromedriver.exe --url-base=wd/hub --port=9515
+2017-08-23 05:57:09:285 - info: Chromedriver: [STDOUT] Starting ChromeDriver 2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41) on port 9515
+Only local connections are allowed.
+2017-08-23 05:57:09:288 - info: JSONWP Proxy: Proxying [GET /status] to [GET http://127.0.0.1:9515/wd/hub/status] with no body
+2017-08-23 05:57:09:309 - info: JSONWP Proxy: Got response with status 200: "{\"sessionId\":\"\",\"status\":0,\"value\":{\"build\":{\"version\":\"alpha\"},\"os\":{\"arch\":\"x86_64\",\"name\":\"Windows NT\",\"version\":\"6.1.7601 SP1\"}}}"
+2017-08-23 05:57:09:310 - info: JSONWP Proxy: Proxying [POST /session] to [POST http://127.0.0.1:9515/wd/hub/session] with body: {"desiredCapabilities":{"chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"e754d6d3"}}}
+2017-08-23 05:57:19:189 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedr...
+2017-08-23 05:57:19:191 - info: Chromedriver: Changed state to 'online'
+2017-08-23 05:57:19:192 - info: [debug] Overriding session id with "809cb9cc3a59d295ed1d59b61657112c"
+2017-08-23 05:57:19:192 - info: [debug] Device launched! Ready for commands
+2017-08-23 05:57:19:193 - info: [debug] Setting command timeout to the default of 60 secs
+2017-08-23 05:57:19:194 - info: [debug] Appium session started with sessionId 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:19:201 - info: <-- POST /wd/hub/session 303 96849.846 ms - 70 
+2017-08-23 05:57:19:225 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c {}
+2017-08-23 05:57:19:227 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c] with body: {}
+2017-08-23 05:57:19:231 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedr...
+2017-08-23 05:57:19:232 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:19:235 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c 200 9.728 ms - 665 
+2017-08-23 05:57:19:252 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":20000}
+2017-08-23 05:57:19:253 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":20000}
+2017-08-23 05:57:19:256 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:19:256 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:19:257 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.149 ms - 72 
+2017-08-23 05:57:19:263 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/url {"url":"https://www.booking.com"}
+2017-08-23 05:57:19:263 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/url] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/url] with body: {"url":"https://www.booking.com"}
+2017-08-23 05:57:27:340 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:27:341 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:27:343 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/url 200 8080.183 ms - 72 
+2017-08-23 05:57:27:503 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:27:503 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:27:506 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:27:507 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:27:507 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.317 ms - 72 
+2017-08-23 05:57:27:513 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:27:514 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:27:515 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.901 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:27:519 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"id","value":"input_destination"}
+2017-08-23 05:57:27:519 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"id","value":"input_destination"}
+2017-08-23 05:57:27:712 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-1"}]}
+2017-08-23 05:57:27:713 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:27:716 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 196.697 ms - 104 
+2017-08-23 05:57:27:731 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:27:732 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:27:739 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:27:740 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:27:741 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 9.561 ms - 72 
+2017-08-23 05:57:27:748 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-1/value {"id":"0.8168733119605489-1","value":["new delhi"]}
+2017-08-23 05:57:27:749 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-1/value] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-1/value] with body: {"id":"0.8168733119605489-1","value":["new delhi"]}
+2017-08-23 05:57:32:451 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:32:451 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:32:452 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-1/value 200 4714.028 ms - 72 
+2017-08-23 05:57:32:458 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:32:459 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:32:462 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:32:463 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:32:464 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.313 ms - 72 
+2017-08-23 05:57:32:469 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:32:469 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:32:470 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.423 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:32:475 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//b[text()='New Delhi']"}
+2017-08-23 05:57:32:476 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//b[text()='New Delhi']"}
+2017-08-23 05:57:32:659 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-2"},{"ELEMENT":"0.8168733119605489-3"},{"ELEMENT":"0.8168733119605489-4"}]}
+2017-08-23 05:57:32:660 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:32:660 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 185.092 ms - 174 
+2017-08-23 05:57:32:664 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:32:666 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:32:669 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:32:669 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:32:669 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.789 ms - 72 
+2017-08-23 05:57:32:673 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/displayed {}
+2017-08-23 05:57:32:673 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/displayed] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/displayed] with body: {}
+2017-08-23 05:57:32:894 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:32:895 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:32:895 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/displayed 200 222.279 ms - 72 
+2017-08-23 05:57:32:898 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:32:898 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:32:902 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:32:902 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:32:903 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.669 ms - 72 
+2017-08-23 05:57:32:906 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:32:907 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:32:909 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.049 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:32:911 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//b[text()='New Delhi']"}
+2017-08-23 05:57:32:911 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//b[text()='New Delhi']"}
+2017-08-23 05:57:33:004 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-2"},{"ELEMENT":"0.8168733119605489-3"},{"ELEMENT":"0.8168733119605489-4"}]}
+2017-08-23 05:57:33:005 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:33:007 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 96.368 ms - 174 
+2017-08-23 05:57:33:028 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:33:028 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:33:036 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:33:036 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:33:037 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 8.879 ms - 72 
+2017-08-23 05:57:33:048 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/enabled {}
+2017-08-23 05:57:33:048 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/enabled] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/enabled] with body: {}
+2017-08-23 05:57:33:183 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:33:184 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:33:185 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/enabled 200 137.339 ms - 72 
+2017-08-23 05:57:33:193 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:33:194 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:33:207 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:33:208 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:33:210 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 16.589 ms - 72 
+2017-08-23 05:57:33:213 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:33:214 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:33:214 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.244 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:33:218 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//b[text()='New Delhi']"}
+2017-08-23 05:57:33:219 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//b[text()='New Delhi']"}
+2017-08-23 05:57:33:330 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-2"},{"ELEMENT":"0.8168733119605489-3"},{"ELEMENT":"0.8168733119605489-4"}]}
+2017-08-23 05:57:33:331 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:33:332 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 113.830 ms - 174 
+2017-08-23 05:57:33:338 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:33:339 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:33:345 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:33:345 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:33:346 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 8.273 ms - 72 
+2017-08-23 05:57:33:351 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/click {"id":"0.8168733119605489-2"}
+2017-08-23 05:57:33:352 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/click] with body: {"id":"0.8168733119605489-2"}
+2017-08-23 05:57:34:148 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:34:148 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:34:149 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-2/click 200 797.865 ms - 72 
+2017-08-23 05:57:34:154 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:34:155 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:34:165 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:34:165 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:34:166 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 11.790 ms - 72 
+2017-08-23 05:57:34:170 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:34:171 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:34:171 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.094 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:34:176 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//button[text()=' > ']"}
+2017-08-23 05:57:34:178 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//button[text()=' > ']"}
+2017-08-23 05:57:34:646 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-5"},{"ELEMENT":"0.8168733119605489-6"}]}
+2017-08-23 05:57:34:646 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:34:647 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 471.468 ms - 139 
+2017-08-23 05:57:34:655 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:34:656 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:34:661 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:34:662 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:34:663 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 7.646 ms - 72 
+2017-08-23 05:57:34:669 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-5/click {"id":"0.8168733119605489-5"}
+2017-08-23 05:57:34:670 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-5/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-5/click] with body: {"id":"0.8168733119605489-5"}
+2017-08-23 05:57:35:305 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:35:306 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:35:307 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-5/click 200 637.598 ms - 72 
+2017-08-23 05:57:35:313 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:35:314 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:35:321 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:35:322 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:35:323 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 10.044 ms - 72 
+2017-08-23 05:57:35:331 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:35:331 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:35:333 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 2.214 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:35:337 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//button[text()=' > ']"}
+2017-08-23 05:57:35:338 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//button[text()=' > ']"}
+2017-08-23 05:57:35:501 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-7"},{"ELEMENT":"0.8168733119605489-6"}]}
+2017-08-23 05:57:35:502 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:35:504 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 165.852 ms - 139 
+2017-08-23 05:57:35:510 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:35:511 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:35:517 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:35:517 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:35:518 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 7.689 ms - 72 
+2017-08-23 05:57:35:522 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-7/click {"id":"0.8168733119605489-7"}
+2017-08-23 05:57:35:522 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-7/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-7/click] with body: {"id":"0.8168733119605489-7"}
+2017-08-23 05:57:36:101 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:36:101 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:36:102 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-7/click 200 580.307 ms - 72 
+2017-08-23 05:57:36:106 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:36:106 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:36:114 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:36:114 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:36:115 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 9.077 ms - 72 
+2017-08-23 05:57:36:119 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:36:119 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:36:119 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.816 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:36:122 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//button[text()=' > ']"}
+2017-08-23 05:57:36:123 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//button[text()=' > ']"}
+2017-08-23 05:57:36:306 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-8"},{"ELEMENT":"0.8168733119605489-6"}]}
+2017-08-23 05:57:36:306 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:36:307 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 184.374 ms - 139 
+2017-08-23 05:57:36:312 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:36:313 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:36:317 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:36:317 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:36:318 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.792 ms - 72 
+2017-08-23 05:57:36:322 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-8/click {"id":"0.8168733119605489-8"}
+2017-08-23 05:57:36:323 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-8/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-8/click] with body: {"id":"0.8168733119605489-8"}
+2017-08-23 05:57:36:897 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:36:897 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:36:898 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-8/click 200 575.650 ms - 72 
+2017-08-23 05:57:36:902 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:36:903 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:36:906 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:36:906 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:36:907 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.633 ms - 72 
+2017-08-23 05:57:36:910 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:36:911 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:36:912 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.274 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:36:915 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//button[text()=' > ']"}
+2017-08-23 05:57:36:916 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//button[text()=' > ']"}
+2017-08-23 05:57:37:058 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-9"},{"ELEMENT":"0.8168733119605489-6"}]}
+2017-08-23 05:57:37:059 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:37:060 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 144.416 ms - 139 
+2017-08-23 05:57:37:064 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:37:064 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:37:068 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:37:068 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:37:069 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.281 ms - 72 
+2017-08-23 05:57:37:073 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-9/click {"id":"0.8168733119605489-9"}
+2017-08-23 05:57:37:073 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-9/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-9/click] with body: {"id":"0.8168733119605489-9"}
+2017-08-23 05:57:37:639 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:37:640 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:37:642 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-9/click 200 569.500 ms - 72 
+2017-08-23 05:57:37:648 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:37:648 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:37:652 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:37:652 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:37:653 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.615 ms - 72 
+2017-08-23 05:57:37:662 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:37:662 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:37:663 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.331 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:37:667 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//button[text()='22']"}
+2017-08-23 05:57:37:668 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//button[text()='22']"}
+2017-08-23 05:57:37:939 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-10"},{"ELEMENT":"0.8168733119605489-11"}]}
+2017-08-23 05:57:37:940 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:37:941 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 273.243 ms - 141 
+2017-08-23 05:57:37:944 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:37:944 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:37:947 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:37:947 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:37:947 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.597 ms - 72 
+2017-08-23 05:57:37:950 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/displayed {}
+2017-08-23 05:57:37:951 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/displayed] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/displayed] with body: {}
+2017-08-23 05:57:38:077 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:38:078 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:38:078 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/displayed 200 128.323 ms - 72 
+2017-08-23 05:57:38:082 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:38:082 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:38:085 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:38:085 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:38:086 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.067 ms - 72 
+2017-08-23 05:57:38:089 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:38:089 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:38:090 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.958 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:38:093 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//button[text()='22']"}
+2017-08-23 05:57:38:093 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//button[text()='22']"}
+2017-08-23 05:57:38:158 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-10"},{"ELEMENT":"0.8168733119605489-11"}]}
+2017-08-23 05:57:38:158 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:38:159 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 65.951 ms - 141 
+2017-08-23 05:57:38:162 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:38:163 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:38:167 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:38:167 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:38:167 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.790 ms - 72 
+2017-08-23 05:57:38:171 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/enabled {}
+2017-08-23 05:57:38:171 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/enabled] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/enabled] with body: {}
+2017-08-23 05:57:38:321 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:38:322 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:38:322 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/enabled 200 151.670 ms - 72 
+2017-08-23 05:57:38:325 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:38:326 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:38:329 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:38:330 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:38:331 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.386 ms - 72 
+2017-08-23 05:57:38:334 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:38:334 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:38:335 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.021 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:38:338 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//button[text()='22']"}
+2017-08-23 05:57:38:340 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//button[text()='22']"}
+2017-08-23 05:57:38:440 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-10"},{"ELEMENT":"0.8168733119605489-11"}]}
+2017-08-23 05:57:38:440 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:38:441 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 102.734 ms - 141 
+2017-08-23 05:57:38:444 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:38:445 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:38:447 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:38:448 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:38:448 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.061 ms - 72 
+2017-08-23 05:57:38:452 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/click {"id":"0.8168733119605489-10"}
+2017-08-23 05:57:38:452 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/click] with body: {"id":"0.8168733119605489-10"}
+2017-08-23 05:57:39:148 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:39:149 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:39:151 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-10/click 200 698.912 ms - 72 
+2017-08-23 05:57:39:169 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:39:170 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:39:176 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:39:177 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:39:177 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 9.150 ms - 72 
+2017-08-23 05:57:39:182 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:39:182 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:39:183 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.520 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:39:187 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//label[contains(text(),'Check-out date')]"}
+2017-08-23 05:57:39:187 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//label[contains(text(),'Check-out date')]"}
+2017-08-23 05:57:39:511 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-12"}]}
+2017-08-23 05:57:39:512 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:39:512 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 325.318 ms - 105 
+2017-08-23 05:57:39:516 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:39:517 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:39:520 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:39:520 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:39:521 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.539 ms - 72 
+2017-08-23 05:57:39:527 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/displayed {}
+2017-08-23 05:57:39:527 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/displayed] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/displayed] with body: {}
+2017-08-23 05:57:39:758 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:39:758 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:39:759 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/displayed 200 231.782 ms - 72 
+2017-08-23 05:57:39:767 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:39:768 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:39:780 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:39:780 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:39:781 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 15.921 ms - 72 
+2017-08-23 05:57:39:786 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:39:786 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:39:787 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.979 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:39:791 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//label[contains(text(),'Check-out date')]"}
+2017-08-23 05:57:39:791 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//label[contains(text(),'Check-out date')]"}
+2017-08-23 05:57:39:869 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-12"}]}
+2017-08-23 05:57:39:869 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:39:870 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 79.021 ms - 105 
+2017-08-23 05:57:39:878 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:39:878 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:39:884 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:39:884 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:39:885 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 6.769 ms - 72 
+2017-08-23 05:57:39:888 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/enabled {}
+2017-08-23 05:57:39:889 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/enabled] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/enabled] with body: {}
+2017-08-23 05:57:39:995 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:39:996 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:39:999 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/enabled 200 108.557 ms - 72 
+2017-08-23 05:57:40:007 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:40:007 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:40:018 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:40:019 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:40:020 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 13.163 ms - 72 
+2017-08-23 05:57:40:023 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:40:023 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:40:024 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.931 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:40:028 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//label[contains(text(),'Check-out date')]"}
+2017-08-23 05:57:40:028 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//label[contains(text(),'Check-out date')]"}
+2017-08-23 05:57:40:082 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-12"}]}
+2017-08-23 05:57:40:082 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:40:083 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 55.121 ms - 105 
+2017-08-23 05:57:40:086 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:40:086 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:40:090 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:40:090 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:40:090 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.953 ms - 72 
+2017-08-23 05:57:40:093 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/click {"id":"0.8168733119605489-12"}
+2017-08-23 05:57:40:093 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/click] with body: {"id":"0.8168733119605489-12"}
+2017-08-23 05:57:40:598 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:40:599 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:40:601 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-12/click 200 507.684 ms - 72 
+2017-08-23 05:57:40:608 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:40:609 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:40:618 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:40:618 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:40:619 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 11.619 ms - 72 
+2017-08-23 05:57:40:622 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:40:623 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:40:624 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.176 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:40:627 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//button[text()=' > '])[2]"}
+2017-08-23 05:57:40:628 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//button[text()=' > '])[2]"}
+2017-08-23 05:57:40:971 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-13"}]}
+2017-08-23 05:57:40:972 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:40:974 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 346.712 ms - 105 
+2017-08-23 05:57:40:978 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:40:979 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:40:983 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:40:984 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:40:984 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 6.309 ms - 72 
+2017-08-23 05:57:40:988 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/displayed {}
+2017-08-23 05:57:40:988 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/displayed] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/displayed] with body: {}
+2017-08-23 05:57:41:151 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:41:151 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:41:153 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/displayed 200 164.983 ms - 72 
+2017-08-23 05:57:41:156 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:41:157 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:41:163 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:41:164 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:41:165 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 8.539 ms - 72 
+2017-08-23 05:57:41:168 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:41:168 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:41:169 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.101 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:41:172 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//button[text()=' > '])[2]"}
+2017-08-23 05:57:41:173 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//button[text()=' > '])[2]"}
+2017-08-23 05:57:41:252 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-13"}]}
+2017-08-23 05:57:41:252 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:41:253 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 80.327 ms - 105 
+2017-08-23 05:57:41:256 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:41:256 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:41:260 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:41:260 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:41:261 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.887 ms - 72 
+2017-08-23 05:57:41:264 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/enabled {}
+2017-08-23 05:57:41:264 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/enabled] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/enabled] with body: {}
+2017-08-23 05:57:41:407 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:41:408 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:41:410 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/enabled 200 145.619 ms - 72 
+2017-08-23 05:57:41:417 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:41:418 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:41:429 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:41:430 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:41:430 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 13.519 ms - 72 
+2017-08-23 05:57:41:436 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:41:437 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:41:437 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.167 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:41:441 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//button[text()=' > '])[2]"}
+2017-08-23 05:57:41:441 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//button[text()=' > '])[2]"}
+2017-08-23 05:57:41:496 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-13"}]}
+2017-08-23 05:57:41:497 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:41:498 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 56.859 ms - 105 
+2017-08-23 05:57:41:501 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:41:501 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:41:504 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:41:504 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:41:504 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.646 ms - 72 
+2017-08-23 05:57:41:507 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/click {"id":"0.8168733119605489-13"}
+2017-08-23 05:57:41:508 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/click] with body: {"id":"0.8168733119605489-13"}
+2017-08-23 05:57:42:059 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:42:059 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:42:059 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-13/click 200 552.345 ms - 72 
+2017-08-23 05:57:42:063 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:42:063 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:42:066 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:42:066 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:42:067 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.475 ms - 72 
+2017-08-23 05:57:42:070 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:42:070 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:42:071 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.835 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:42:074 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//button[text()='5'])[2]"}
+2017-08-23 05:57:42:074 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//button[text()='5'])[2]"}
+2017-08-23 05:57:42:432 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-14"}]}
+2017-08-23 05:57:42:433 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:42:433 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 359.228 ms - 105 
+2017-08-23 05:57:42:437 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:42:437 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:42:440 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:42:441 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:42:441 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.650 ms - 72 
+2017-08-23 05:57:42:444 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/displayed {}
+2017-08-23 05:57:42:445 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/displayed] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/displayed] with body: {}
+2017-08-23 05:57:42:635 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:42:636 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:42:636 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/displayed 200 191.984 ms - 72 
+2017-08-23 05:57:42:639 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:42:639 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:42:654 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:42:654 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:42:654 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 15.284 ms - 72 
+2017-08-23 05:57:42:658 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:42:659 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:42:660 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 2.575 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:42:664 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//button[text()='5'])[2]"}
+2017-08-23 05:57:42:664 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//button[text()='5'])[2]"}
+2017-08-23 05:57:42:773 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-14"}]}
+2017-08-23 05:57:42:774 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:42:774 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 110.477 ms - 105 
+2017-08-23 05:57:42:777 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:42:777 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:42:780 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:42:780 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:42:781 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.762 ms - 72 
+2017-08-23 05:57:42:784 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/enabled {}
+2017-08-23 05:57:42:784 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/enabled] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/enabled] with body: {}
+2017-08-23 05:57:42:943 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:42:944 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:42:944 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/enabled 200 160.729 ms - 72 
+2017-08-23 05:57:42:947 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:42:947 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:42:950 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:42:950 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:42:950 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.442 ms - 72 
+2017-08-23 05:57:42:953 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:42:954 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:42:954 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.905 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:42:959 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//button[text()='5'])[2]"}
+2017-08-23 05:57:42:959 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//button[text()='5'])[2]"}
+2017-08-23 05:57:43:057 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-14"}]}
+2017-08-23 05:57:43:057 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:43:058 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 99.377 ms - 105 
+2017-08-23 05:57:43:061 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:43:062 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:43:064 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:43:065 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:43:065 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.165 ms - 72 
+2017-08-23 05:57:43:070 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/click {"id":"0.8168733119605489-14"}
+2017-08-23 05:57:43:070 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/click] with body: {"id":"0.8168733119605489-14"}
+2017-08-23 05:57:43:648 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:43:648 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:43:649 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-14/click 200 578.940 ms - 72 
+2017-08-23 05:57:43:655 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:43:656 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:43:662 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:43:663 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:43:664 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 8.769 ms - 72 
+2017-08-23 05:57:43:669 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:43:670 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:43:671 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 2.115 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:43:675 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"name","value":"group_adults"}
+2017-08-23 05:57:43:675 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"name","value":"group_adults"}
+2017-08-23 05:57:44:120 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-15"}]}
+2017-08-23 05:57:44:121 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:121 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 446.280 ms - 105 
+2017-08-23 05:57:44:124 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:44:124 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:44:127 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:44:127 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:127 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.424 ms - 72 
+2017-08-23 05:57:44:131 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/name {}
+2017-08-23 05:57:44:131 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/name] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/name] with body: {}
+2017-08-23 05:57:44:189 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":"select"}
+2017-08-23 05:57:44:190 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:191 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/name 200 60.624 ms - 76 
+2017-08-23 05:57:44:200 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:44:201 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:44:210 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:44:211 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:212 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 12.253 ms - 72 
+2017-08-23 05:57:44:218 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:44:219 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:44:219 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.903 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:44:222 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"name","value":"group_adults"}
+2017-08-23 05:57:44:222 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"name","value":"group_adults"}
+2017-08-23 05:57:44:318 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-15"}]}
+2017-08-23 05:57:44:318 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:319 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 96.870 ms - 105 
+2017-08-23 05:57:44:322 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:44:322 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:44:324 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:44:324 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:325 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.305 ms - 72 
+2017-08-23 05:57:44:328 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/attribute/multiple {}
+2017-08-23 05:57:44:328 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/attribute/multiple] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/attribute/multiple] with body: {}
+2017-08-23 05:57:44:375 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:44:376 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:378 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/attribute/multiple 200 49.775 ms - 72 
+2017-08-23 05:57:44:385 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:44:386 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:44:399 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:44:399 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:400 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 15.268 ms - 72 
+2017-08-23 05:57:44:404 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:44:405 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:44:405 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.217 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:44:415 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"name","value":"group_adults"}
+2017-08-23 05:57:44:415 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"name","value":"group_adults"}
+2017-08-23 05:57:44:502 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-15"}]}
+2017-08-23 05:57:44:503 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:503 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 88.787 ms - 105 
+2017-08-23 05:57:44:507 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:44:507 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:44:510 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:44:510 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:511 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.108 ms - 72 
+2017-08-23 05:57:44:514 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/elements {"id":"0.8168733119605489-15","using":"tag name","value":"option"}
+2017-08-23 05:57:44:514 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/elements] with body: {"id":"0.8168733119605489-15","using":"tag name","value":"option"}
+2017-08-23 05:57:44:676 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-16"},{"ELEMENT":"0.8168733119605489-17"},{"ELEMENT":"0.8168733119605489-18"},{"ELEMENT":"0.8168733...
+2017-08-23 05:57:44:676 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:678 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/elements 200 164.061 ms - 1149 
+2017-08-23 05:57:44:690 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-16/text {}
+2017-08-23 05:57:44:691 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-16/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-16/text] with body: {}
+2017-08-23 05:57:44:942 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":"1"}
+2017-08-23 05:57:44:942 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:44:942 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-16/text 200 252.925 ms - 71 
+2017-08-23 05:57:44:945 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-17/text {}
+2017-08-23 05:57:44:946 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-17/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-17/text] with body: {}
+2017-08-23 05:57:45:153 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":"2"}
+2017-08-23 05:57:45:153 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:45:154 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-17/text 200 208.584 ms - 71 
+2017-08-23 05:57:45:159 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-18/text {}
+2017-08-23 05:57:45:160 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-18/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-18/text] with body: {}
+2017-08-23 05:57:45:385 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":"3"}
+2017-08-23 05:57:45:385 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:45:386 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-18/text 200 226.395 ms - 71 
+2017-08-23 05:57:45:389 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/text {}
+2017-08-23 05:57:45:389 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/text] with body: {}
+2017-08-23 05:57:45:584 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":"4"}
+2017-08-23 05:57:45:585 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:45:586 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/text 200 197.061 ms - 71 
+2017-08-23 05:57:45:590 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:45:591 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:45:594 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:45:595 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:45:596 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.609 ms - 72 
+2017-08-23 05:57:45:599 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:45:599 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:45:600 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.301 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:45:604 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"name","value":"group_adults"}
+2017-08-23 05:57:45:604 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"name","value":"group_adults"}
+2017-08-23 05:57:45:715 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-15"}]}
+2017-08-23 05:57:45:715 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:45:716 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 112.577 ms - 105 
+2017-08-23 05:57:45:721 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:45:721 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:45:726 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:45:726 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:45:727 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 6.418 ms - 72 
+2017-08-23 05:57:45:734 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/elements {"id":"0.8168733119605489-15","using":"xpath","value":".//option[normalize-space(.) = \"4\"]"}
+2017-08-23 05:57:45:735 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/elements] with body: {"id":"0.8168733119605489-15","using":"xpath","value":".//option[normalize-space(.) = \"4\"]"}
+2017-08-23 05:57:45:961 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-19"}]}
+2017-08-23 05:57:45:961 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:45:962 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-15/elements 200 227.218 ms - 105 
+2017-08-23 05:57:45:965 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/selected {}
+2017-08-23 05:57:45:967 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/selected] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/selected] with body: {}
+2017-08-23 05:57:46:136 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":false}
+2017-08-23 05:57:46:137 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:46:139 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/selected 200 173.672 ms - 73 
+2017-08-23 05:57:46:148 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/click {"id":"0.8168733119605489-19"}
+2017-08-23 05:57:46:149 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/click] with body: {"id":"0.8168733119605489-19"}
+2017-08-23 05:57:46:561 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:46:561 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:46:562 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-19/click 200 414.557 ms - 72 
+2017-08-23 05:57:46:571 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:46:571 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:46:585 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:46:585 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:46:587 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 16.622 ms - 72 
+2017-08-23 05:57:46:590 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:46:591 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:46:591 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.232 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:46:594 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//span[contains(text(),'Yes')]"}
+2017-08-23 05:57:46:595 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//span[contains(text(),'Yes')]"}
+2017-08-23 05:57:46:781 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-46"}]}
+2017-08-23 05:57:46:782 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:46:784 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 189.352 ms - 105 
+2017-08-23 05:57:46:791 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:46:792 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:46:804 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:46:805 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:46:805 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 14.390 ms - 72 
+2017-08-23 05:57:46:809 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/displayed {}
+2017-08-23 05:57:46:810 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/displayed] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/displayed] with body: {}
+2017-08-23 05:57:46:967 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:46:968 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:46:968 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/displayed 200 158.799 ms - 72 
+2017-08-23 05:57:46:971 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:46:971 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:46:974 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:46:974 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:46:975 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.630 ms - 72 
+2017-08-23 05:57:46:977 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:46:977 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:46:978 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.872 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:46:981 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//span[contains(text(),'Yes')]"}
+2017-08-23 05:57:46:981 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//span[contains(text(),'Yes')]"}
+2017-08-23 05:57:47:042 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-46"}]}
+2017-08-23 05:57:47:043 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:47:044 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 62.912 ms - 105 
+2017-08-23 05:57:47:046 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:47:046 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:47:049 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:47:049 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:47:050 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.771 ms - 72 
+2017-08-23 05:57:47:052 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/enabled {}
+2017-08-23 05:57:47:053 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/enabled] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/enabled] with body: {}
+2017-08-23 05:57:47:168 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:47:168 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:47:168 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/enabled 200 116.230 ms - 72 
+2017-08-23 05:57:47:171 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:47:171 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:47:174 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:47:174 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:47:175 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.626 ms - 72 
+2017-08-23 05:57:47:178 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:47:178 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:47:178 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.816 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:47:181 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//span[contains(text(),'Yes')]"}
+2017-08-23 05:57:47:182 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//span[contains(text(),'Yes')]"}
+2017-08-23 05:57:47:265 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-46"}]}
+2017-08-23 05:57:47:266 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:47:266 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 84.476 ms - 105 
+2017-08-23 05:57:47:269 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:47:269 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:47:272 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:47:273 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:47:274 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.488 ms - 72 
+2017-08-23 05:57:47:276 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/click {"id":"0.8168733119605489-46"}
+2017-08-23 05:57:47:276 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/click] with body: {"id":"0.8168733119605489-46"}
+2017-08-23 05:57:47:956 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:47:957 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:47:959 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-46/click 200 682.452 ms - 72 
+2017-08-23 05:57:47:965 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:47:966 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:47:970 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:47:970 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:47:971 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 6.047 ms - 72 
+2017-08-23 05:57:47:975 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:47:975 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:47:976 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.527 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:47:979 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//button[contains(text(),'Search')]"}
+2017-08-23 05:57:47:979 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//button[contains(text(),'Search')]"}
+2017-08-23 05:57:48:193 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-47"}]}
+2017-08-23 05:57:48:194 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:48:196 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 216.660 ms - 105 
+2017-08-23 05:57:48:202 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:48:203 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:48:213 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:48:213 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:48:216 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 14.341 ms - 72 
+2017-08-23 05:57:48:224 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/displayed {}
+2017-08-23 05:57:48:225 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/displayed] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/displayed] with body: {}
+2017-08-23 05:57:48:389 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:48:389 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:48:390 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/displayed 200 166.165 ms - 72 
+2017-08-23 05:57:48:393 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:48:393 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:48:397 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:48:397 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:48:398 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.124 ms - 72 
+2017-08-23 05:57:48:401 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:48:401 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:48:402 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.895 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:48:405 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//button[contains(text(),'Search')]"}
+2017-08-23 05:57:48:405 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//button[contains(text(),'Search')]"}
+2017-08-23 05:57:48:483 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-47"}]}
+2017-08-23 05:57:48:484 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:48:484 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 79.536 ms - 105 
+2017-08-23 05:57:48:488 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:48:488 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:48:491 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:48:491 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:48:492 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.758 ms - 72 
+2017-08-23 05:57:48:495 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/enabled {}
+2017-08-23 05:57:48:496 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/enabled] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/enabled] with body: {}
+2017-08-23 05:57:48:655 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:57:48:655 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:48:656 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/enabled 200 160.243 ms - 72 
+2017-08-23 05:57:48:659 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:48:659 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:48:663 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:48:664 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:48:664 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.132 ms - 72 
+2017-08-23 05:57:48:667 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:48:668 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:48:668 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.772 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:48:671 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//button[contains(text(),'Search')]"}
+2017-08-23 05:57:48:671 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//button[contains(text(),'Search')]"}
+2017-08-23 05:57:48:742 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.8168733119605489-47"}]}
+2017-08-23 05:57:48:743 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:48:743 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 72.180 ms - 105 
+2017-08-23 05:57:48:746 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:57:48:746 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:57:48:752 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:48:754 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:48:756 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 10.118 ms - 72 
+2017-08-23 05:57:48:774 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/click {"id":"0.8168733119605489-47"}
+2017-08-23 05:57:48:775 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/click] with body: {"id":"0.8168733119605489-47"}
+2017-08-23 05:57:49:507 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:49:509 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:49:511 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.8168733119605489-47/click 200 736.722 ms - 72 
+2017-08-23 05:57:49:529 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:57:49:530 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:57:49:541 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:57:49:541 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:57:49:542 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 13.110 ms - 72 
+2017-08-23 05:57:49:546 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:57:49:546 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:49:547 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.194 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:57:49:550 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//button[@data-tab-target=\"sr_sortfilters\"])[1]"}
+2017-08-23 05:57:49:550 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//button[@data-tab-target=\"sr_sortfilters\"])[1]"}
+2017-08-23 05:58:02:123 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[]}
+2017-08-23 05:58:02:124 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:02:124 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 12574.039 ms - 70 
+2017-08-23 05:58:02:127 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:58:02:127 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:58:02:131 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:02:131 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:02:131 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.350 ms - 72 
+2017-08-23 05:58:02:635 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:58:02:637 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:58:02:650 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:02:651 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:02:665 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 29.713 ms - 72 
+2017-08-23 05:58:02:667 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:58:02:667 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:02:668 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.984 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:02:672 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//button[@data-tab-target=\"sr_sortfilters\"])[1]"}
+2017-08-23 05:58:02:672 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//button[@data-tab-target=\"sr_sortfilters\"])[1]"}
+2017-08-23 05:58:04:476 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.780428328133814-1"}]}
+2017-08-23 05:58:04:477 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:04:477 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 1805.501 ms - 103 
+2017-08-23 05:58:04:481 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:58:04:481 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:58:04:485 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:04:485 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:04:486 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.577 ms - 72 
+2017-08-23 05:58:04:490 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/displayed {}
+2017-08-23 05:58:04:490 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/displayed] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/displayed] with body: {}
+2017-08-23 05:58:06:928 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:58:06:928 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:06:929 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/displayed 200 2439.088 ms - 72 
+2017-08-23 05:58:06:932 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:58:06:933 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:58:06:936 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:06:937 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:06:937 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.138 ms - 72 
+2017-08-23 05:58:06:940 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:58:06:941 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:06:941 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.949 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:06:944 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//button[@data-tab-target=\"sr_sortfilters\"])[1]"}
+2017-08-23 05:58:06:945 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//button[@data-tab-target=\"sr_sortfilters\"])[1]"}
+2017-08-23 05:58:07:122 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.780428328133814-1"}]}
+2017-08-23 05:58:07:122 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:07:122 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 178.336 ms - 103 
+2017-08-23 05:58:07:125 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:58:07:125 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:58:07:128 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:07:128 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:07:129 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.631 ms - 72 
+2017-08-23 05:58:07:131 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/enabled {}
+2017-08-23 05:58:07:132 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/enabled] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/enabled] with body: {}
+2017-08-23 05:58:07:370 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:58:07:370 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:07:371 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/enabled 200 239.612 ms - 72 
+2017-08-23 05:58:07:374 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:58:07:374 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:58:07:376 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:07:376 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:07:377 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 3.378 ms - 72 
+2017-08-23 05:58:07:380 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:58:07:380 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:07:381 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.078 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:07:384 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//button[@data-tab-target=\"sr_sortfilters\"])[1]"}
+2017-08-23 05:58:07:384 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//button[@data-tab-target=\"sr_sortfilters\"])[1]"}
+2017-08-23 05:58:07:482 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.780428328133814-1"}]}
+2017-08-23 05:58:07:483 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:07:483 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 99.248 ms - 103 
+2017-08-23 05:58:07:486 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:58:07:486 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:58:07:489 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:07:490 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:07:491 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 4.350 ms - 72 
+2017-08-23 05:58:07:492 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/click {"id":"0.780428328133814-1"}
+2017-08-23 05:58:07:493 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/click] with body: {"id":"0.780428328133814-1"}
+2017-08-23 05:58:08:898 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:08:899 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:08:899 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/click 200 1407.089 ms - 72 
+2017-08-23 05:58:08:903 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:58:08:903 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:58:08:907 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:08:907 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:08:908 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.069 ms - 72 
+2017-08-23 05:58:08:911 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:58:08:911 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:08:912 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 1.143 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:08:915 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//a[@data-filter-name='WiFi'])[1]"}
+2017-08-23 05:58:08:916 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//a[@data-filter-name='WiFi'])[1]"}
+2017-08-23 05:58:10:299 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.780428328133814-2"}]}
+2017-08-23 05:58:10:300 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:10:301 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 1385.447 ms - 103 
+2017-08-23 05:58:10:305 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:58:10:305 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:58:10:310 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:10:311 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:10:312 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 7.021 ms - 72 
+2017-08-23 05:58:10:316 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/displayed {}
+2017-08-23 05:58:10:317 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/displayed] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/displayed] with body: {}
+2017-08-23 05:58:10:540 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:58:10:541 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:10:541 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/displayed 200 225.043 ms - 72 
+2017-08-23 05:58:10:547 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:58:10:548 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:58:10:554 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:10:555 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:10:555 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 7.993 ms - 72 
+2017-08-23 05:58:10:559 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:58:10:559 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:10:560 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.808 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:10:563 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//a[@data-filter-name='WiFi'])[1]"}
+2017-08-23 05:58:10:563 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//a[@data-filter-name='WiFi'])[1]"}
+2017-08-23 05:58:10:673 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.780428328133814-2"}]}
+2017-08-23 05:58:10:674 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:10:675 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 112.547 ms - 103 
+2017-08-23 05:58:10:679 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:58:10:679 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:58:10:683 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:10:684 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:10:685 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 5.964 ms - 72 
+2017-08-23 05:58:10:689 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/enabled {}
+2017-08-23 05:58:10:689 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/enabled] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/enabled] with body: {}
+2017-08-23 05:58:10:811 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":true}
+2017-08-23 05:58:10:811 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:10:812 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/enabled 200 123.663 ms - 72 
+2017-08-23 05:58:10:817 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":0}
+2017-08-23 05:58:10:817 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":0}
+2017-08-23 05:58:10:823 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:10:823 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:10:824 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 7.671 ms - 72 
+2017-08-23 05:58:10:828 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context {}
+2017-08-23 05:58:10:828 - info: [debug] Responding to client with success: {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:10:830 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/context 200 0.978 ms - 79 {"status":0,"value":"WEBVIEW_1","sessionId":"809cb9cc3a59d295ed1d59b61657112c"}
+2017-08-23 05:58:10:833 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"(//a[@data-filter-name='WiFi'])[1]"}
+2017-08-23 05:58:10:833 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"(//a[@data-filter-name='WiFi'])[1]"}
+2017-08-23 05:58:10:950 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.780428328133814-2"}]}
+2017-08-23 05:58:10:950 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:10:951 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 118.448 ms - 103 
+2017-08-23 05:58:10:973 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts {"type":"implicit","ms":1000}
+2017-08-23 05:58:10:973 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts] with body: {"type":"implicit","ms":1000}
+2017-08-23 05:58:10:988 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:10:988 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:10:989 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/timeouts 200 16.202 ms - 72 
+2017-08-23 05:58:11:003 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/click {"id":"0.780428328133814-2"}
+2017-08-23 05:58:11:003 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/click] with body: {"id":"0.780428328133814-2"}
+2017-08-23 05:58:11:706 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:11:706 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:11:707 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-2/click 200 704.417 ms - 72 
+2017-08-23 05:58:11:711 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element {"using":"xpath","value":"//button[@data-tab-target=\"sr_sortfilters\"]"}
+2017-08-23 05:58:11:712 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element] with body: {"using":"xpath","value":"//button[@data-tab-target=\"sr_sortfilters\"]"}
+2017-08-23 05:58:22:396 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":{"ELEMENT":"0.780428328133814-1"}}
+2017-08-23 05:58:22:396 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:22:397 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element 200 10685.812 ms - 101 
+2017-08-23 05:58:22:401 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/click {"id":"0.780428328133814-1"}
+2017-08-23 05:58:22:401 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/click] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/click] with body: {"id":"0.780428328133814-1"}
+2017-08-23 05:58:22:779 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":10,"value":{"message":"stale element reference: element is not attached to the page document\n  (Session info: chrome=59.0.3071.125)\n  (Dri...
+2017-08-23 05:58:22:779 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:22:780 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.780428328133814-1/click 200 378.912 ms - 318 
+2017-08-23 05:58:27:799 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/execute {"script":"window.scrollBy(0,250)","args":[""]}
+2017-08-23 05:58:27:800 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/execute] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/execute] with body: {"script":"window.scrollBy(0,250)","args":[""]}
+2017-08-23 05:58:28:043 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:28:043 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:28:044 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/execute 200 244.940 ms - 72 
+2017-08-23 05:58:28:048 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements {"using":"xpath","value":"//div[contains(text(),'Set your budget per night')]/..//span"}
+2017-08-23 05:58:28:049 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements] with body: {"using":"xpath","value":"//div[contains(text(),'Set your budget per night')]/..//span"}
+2017-08-23 05:58:28:327 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":[{"ELEMENT":"0.034817051804932886-1"},{"ELEMENT":"0.034817051804932886-2"},{"ELEMENT":"0.034817051804932886-3"},{"ELEMENT":"0.0348...
+2017-08-23 05:58:28:327 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:28:328 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/elements 200 279.276 ms - 254 
+2017-08-23 05:58:28:331 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-1/text {}
+2017-08-23 05:58:28:331 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-1/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-1/text] with body: {}
+2017-08-23 05:58:28:922 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":""}
+2017-08-23 05:58:28:922 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:28:923 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-1/text 200 592.408 ms - 70 
+2017-08-23 05:58:28:926 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-1/text {}
+2017-08-23 05:58:28:927 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-1/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-1/text] with body: {}
+2017-08-23 05:58:28:997 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":""}
+2017-08-23 05:58:28:998 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:28:999 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-1/text 200 72.591 ms - 70 
+2017-08-23 05:58:29:003 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-2/text {}
+2017-08-23 05:58:29:004 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-2/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-2/text] with body: {}
+2017-08-23 05:58:29:210 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":""}
+2017-08-23 05:58:29:211 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:29:211 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-2/text 200 208.064 ms - 70 
+2017-08-23 05:58:29:214 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-2/text {}
+2017-08-23 05:58:29:214 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-2/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-2/text] with body: {}
+2017-08-23 05:58:29:318 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":""}
+2017-08-23 05:58:29:319 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:29:319 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-2/text 200 104.950 ms - 70 
+2017-08-23 05:58:29:322 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-3/text {}
+2017-08-23 05:58:29:322 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-3/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-3/text] with body: {}
+2017-08-23 05:58:29:514 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":""}
+2017-08-23 05:58:29:515 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:29:515 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-3/text 200 193.491 ms - 70 
+2017-08-23 05:58:29:518 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-3/text {}
+2017-08-23 05:58:29:518 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-3/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-3/text] with body: {}
+2017-08-23 05:58:29:583 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":""}
+2017-08-23 05:58:29:583 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:29:583 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-3/text 200 65.677 ms - 70 
+2017-08-23 05:58:29:590 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-4/text {}
+2017-08-23 05:58:29:590 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-4/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-4/text] with body: {}
+2017-08-23 05:58:29:771 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":""}
+2017-08-23 05:58:29:772 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:29:773 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-4/text 200 206.857 ms - 70 
+2017-08-23 05:58:29:782 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-4/text {}
+2017-08-23 05:58:29:782 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-4/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-4/text] with body: {}
+2017-08-23 05:58:29:888 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":""}
+2017-08-23 05:58:29:888 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:29:889 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-4/text 200 107.612 ms - 70 
+2017-08-23 05:58:29:892 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-5/text {}
+2017-08-23 05:58:29:893 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-5/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-5/text] with body: {}
+2017-08-23 05:58:30:101 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":""}
+2017-08-23 05:58:30:101 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:30:102 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-5/text 200 209.873 ms - 70 
+2017-08-23 05:58:30:105 - info: --> GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-5/text {}
+2017-08-23 05:58:30:105 - info: JSONWP Proxy: Proxying [GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-5/text] to [GET http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-5/text] with body: {}
+2017-08-23 05:58:30:197 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":""}
+2017-08-23 05:58:30:198 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:30:199 - info: <-- GET /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element/0.034817051804932886-5/text 200 94.513 ms - 70 
+2017-08-23 05:58:30:220 - info: --> POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element {"using":"xpath","value":"//span[text()='']"}
+2017-08-23 05:58:30:220 - info: JSONWP Proxy: Proxying [POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element] to [POST http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element] with body: {"using":"xpath","value":"//span[text()='']"}
+2017-08-23 05:58:31:308 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":7,"value":{"message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[text()='']\"}\n  (Session info:...
+2017-08-23 05:58:31:308 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:31:309 - info: <-- POST /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/element 200 1088.857 ms - 348 
+2017-08-23 05:58:31:317 - info: --> DELETE /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/window {}
+2017-08-23 05:58:31:318 - info: JSONWP Proxy: Proxying [DELETE /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/window] to [DELETE http://127.0.0.1:9515/wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/window] with body: {}
+2017-08-23 05:58:33:813 - info: JSONWP Proxy: Got response with status 200: {"sessionId":"809cb9cc3a59d295ed1d59b61657112c","status":0,"value":null}
+2017-08-23 05:58:33:814 - info: JSONWP Proxy: Replacing sessionId 809cb9cc3a59d295ed1d59b61657112c with 809cb9cc3a59d295ed1d59b61657112c
+2017-08-23 05:58:33:816 - info: <-- DELETE /wd/hub/session/809cb9cc3a59d295ed1d59b61657112c/window 200 2498.538 ms - 72 
