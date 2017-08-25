@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Appium Test">
-<parameter name="browser" value="appium"/>
+  <test name="chrome Test">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="com.ctli.it.testcases.LoginTestCase"/>
+    </classes>
+  </test> 
+   <test name="Appium Test">
     <parameter name="browser" value="appium"/>
     <classes>
       <class name="com.ctli.it.mobiletestcase.BookingTestCase"/>
